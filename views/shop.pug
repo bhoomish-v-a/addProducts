@@ -1,0 +1,13 @@
+extend layouts/main.pug
+
+block content 
+    section 
+        <h1>Products</h1>
+        <h3>List of all products in pug</h3>
+        if(itemList.length > 0)
+            ul 
+                each i in itemList 
+                    li #{i}
+        else 
+            <p>no data found</p>
+

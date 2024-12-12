@@ -1,0 +1,17 @@
+<%-include('layouts/header.ejs')%>
+    <h1><%=name%> Products</h1>
+    <h3>List of all products</h3>
+    <% if(item.length>0) {%>
+    <% item.forEach((item)=>{%>
+        <ul>
+            <li>
+                <%=item %>
+            </li>
+        </ul>
+        <%}); %>
+        <%} else{ %>
+            <p>no items found</p>
+            <% }%>
+
+<%-include('layouts/footer.ejs')%>
+   
